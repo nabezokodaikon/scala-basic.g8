@@ -2,8 +2,8 @@ import sbt._
 import sbt.Keys._
 
 object Dependencies {
-  val specs2 = "org.specs2" %% "specs2" % "2.3.10" % "test"
-  val all = Seq(specs2)
+  val scalatest="org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+  val all = Seq(scalatest)
 }
 
 object Resolvers {
