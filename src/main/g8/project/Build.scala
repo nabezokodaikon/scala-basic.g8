@@ -12,6 +12,22 @@ object Resolvers {
   val all = Seq(snapshots, releases)
 }
 
+object Format {
+  import com.typesafe.sbt.SbtScalariform._
+
+  lazy val all = scalariformSettings ++ Seq(
+    ScalariformKeys.preferences in Compile := formattingPreferences,
+    ScalariformKeys.preferences in Test := formattingPreferences
+  )
+
+  def formattingPreferences = {
+    import scalariform.formatter.preferences._
+    FormattingPreferences()
+      .setPreference(AlignParameters, true)
+      .setPreference(AlignSingleLineCaseStatements, false)
+  }
+}
+
 object Build extends Build {
 
   lazy val $name;format="camel"$ = Project(
@@ -25,6 +41,6 @@ object Build extends Build {
       libraryDependencies ++= Dependencies.all,
       resolvers ++= Resolvers.all
       // add other settings here
-    )
+    ) ++ Format.all
   )
 }
