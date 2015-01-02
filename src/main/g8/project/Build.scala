@@ -2,7 +2,7 @@ import sbt._
 import sbt.Keys._
 
 object Dependencies {
-  val scalatest="org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+  val scalatest="org.scalatest" % "scalatest_2.11" % "2.2.1" % "test"
   val all = Seq(scalatest)
 }
 
