@@ -1,18 +1,18 @@
-### scala with scalatest.
-1. Do clone.
-
-    ```bash
-    $ git clone https://github.com/nabezokodaikon/scala-sbt.g8.git
-    ```
-
-1. Bring the latest repository to local repository.
-
-    ```bash
-    $ git fetch
-    ```
-
-1. Checkout remote branche.
-
-    ```bash
-    $ git checkout -b scalatest origin/scalatest
-    ```
+# Scala with scalatest.
+## Usage
+### Master branch
+```bash
+$ g8 nabezokodaikon/scala-sbt
+```
+### Other branch
+```bash
+$ g8 nabezokodaikon/scala-sbt -b feature
+```
+## Test
+```bash
+$ g8 file:///home/develop/workspace/scala-sbt.g8/ --name=uftest --force
+$ cd uftest
+```
+## References
+[giter8](https://github.com/n8han/giter8)
+[basic-scala-project.g8](https://github.com/fayimora/basic-scala-project.g8)
