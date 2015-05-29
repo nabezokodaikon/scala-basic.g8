@@ -1,7 +1,9 @@
-package $organization$
+package $package$
 
 object Main extends App {
   def helloWorld(name: String): String = {
     "Hello " + name + "!"
   }
+
+  println("HelloWorld!")
 }
