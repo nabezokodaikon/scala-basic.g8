@@ -16,3 +16,4 @@ $ cd uftest
 ## References
 [giter8](https://github.com/n8han/giter8)
 [basic-scala-project.g8](https://github.com/fayimora/basic-scala-project.g8)
+
