@@ -10,7 +10,7 @@ $ g8 nabezokodaikon/scala-sbt -b feature
 ```
 ## Test
 ```bash
-$ g8 file:///home/develop/workspace/scala-sbt.g8/ --name=uftest --force
+$ g8 file://scala-sbt.g8/ --name=uftest --force
 $ cd uftest
 ```
 ## References
