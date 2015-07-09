@@ -42,7 +42,7 @@ object Build extends Build {
   lazy val $name;format="camel"$ = Project(
     id = "$name;format="norm"$",
     base = file("."),
-    settings = Project.defaultSettings ++ Seq(
+    settings = Seq(
       name := "$name$",
       organization := "$organization$",
       version := "$version$",
