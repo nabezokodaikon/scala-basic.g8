@@ -28,6 +28,15 @@ object Format {
   }
 }
 
+object Options {
+  lazy val all = Seq(
+    "-deprecation",
+    "-feature",
+    "-unchecked",
+    "-Xlint"
+  )
+}
+
 object Build extends Build {
 
   lazy val $name;format="camel"$ = Project(
@@ -38,6 +47,7 @@ object Build extends Build {
       organization := "$organization$",
       version := "$version$",
       scalaVersion := "$scala_version$",
+      scalacOptions := Options.all,
       libraryDependencies ++= Dependencies.all,
       resolvers ++= Resolvers.all
       // add other settings here
