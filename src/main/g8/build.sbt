@@ -18,5 +18,5 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.12.5" % "test"
 )
 
-initialCommands := "import $package$"
+initialCommands := "import $package$._"
 
