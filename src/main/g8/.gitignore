@@ -21,3 +21,6 @@ project/plugins/project/
 
 # osx
 .DS_Store
+
+# tag
+tags
