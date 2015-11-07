@@ -1,9 +1,13 @@
 package $package$
 
-object Main extends App {
+import com.typesafe.scalalogging.LazyLogging
+
+object Main extends App with LazyLogging {
+
   def helloWorld(name: String): String = {
     "Hello " + name + "!"
   }
 
-  println("HelloWorld!")
+  logger.info("HelloWorld!")
+
 }
