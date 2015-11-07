@@ -2,16 +2,16 @@
 ## Usage
 ### Master branch
 ```bash
-$ g8 nabezokodaikon/scala-sbt
+$ g8 nabezokodaikon/scala-basic
 ```
 ### Other branch
 ```bash
-$ g8 nabezokodaikon/scala-sbt -b feature
+$ g8 nabezokodaikon/scala-basic -b feature
 ```
 ## Test
 ```bash
-$ g8 file://scala-sbt.g8/ --name=uftest --force
-$ cd uftest
+$ g8 file://scala-basic.g8/ --name=scala-basic-test --force
+$ cd scala-basic-test
 ```
 ## References
 [giter8](https://github.com/n8han/giter8)
