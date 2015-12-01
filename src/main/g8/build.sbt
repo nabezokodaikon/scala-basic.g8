@@ -7,7 +7,13 @@ lazy val commonSettings = Seq(
     "-feature",
     "-unchecked",
     "-Xlint"
-  )
+  ),
+  shellPrompt := { state =>
+    val branch = if (file(".git").exists) {
+      "git branch".lines_!.find { _.head == '*' }.map { _.drop(1) }.getOrElse("")
+    } else ""
+    Project.extract(state).currentRef.project + branch + " > "
+  }
 )
 
 lazy val root = (project.in(file(".")))
