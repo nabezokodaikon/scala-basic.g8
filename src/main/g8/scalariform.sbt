@@ -6,7 +6,10 @@ scalariformSettings
 
 ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(AlignParameters, true)
-  .setPreference(AlignSingleLineCaseStatements, false)
+  .setPreference(CompactStringConcatenation, true)
+  .setPreference(CompactControlReadability, false)
+  .setPreference(AlignSingleLineCaseStatements, true)
+  .setPreference(AlignSingleLineCaseStatements.MaxArrowIndent, 40)
+  .setPreference(SpacesWithinPatternBinders, true)
   .setPreference(DoubleIndentClassDeclaration, true)
-  .setPreference(PreserveDanglingCloseParenthesis, true)
-
+  .setPreference(SpacesAroundMultiImports, true)
