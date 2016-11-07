@@ -27,13 +27,13 @@ lazy val root = (project.in(file(".")))
     libraryDependencies ++= {
       Seq(
         // Test
-        "org.scalactic" %% "scalactic" % "3.0.0-M15",
-        "org.scalatest" %% "scalatest" % "3.0.0-M15" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.13.0" % "test",
+        "org.scalactic" %% "scalactic" % "3.0.0",
+        "org.scalatest" %% "scalatest" % "3.0.0" % "test",
+        "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
 
         // Logger
         "ch.qos.logback" % "logback-classic" % "1.1.7",
-        "com.typesafe.scala-logging" %% "scala-logging" % "3.1.0"
+        "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0"
       )
     }
   )
