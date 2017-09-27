@@ -2,7 +2,7 @@ package $package$
 
 import org.scalatest.FunSuite                       
                                                     
-class MainTest extends FunSuite {                   
+class MainSpec extends FunSuite {                   
   test("helloWorld") {                              
     assert(Main.helloWorld("nabezokodaikokn") == "Hello nabezokodaikokn!")
   }                                                 

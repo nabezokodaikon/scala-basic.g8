@@ -5,15 +5,9 @@ lazy val commonSettings = Seq(
   scalacOptions ++= Seq(
     "-deprecation",
     "-feature",
-    "-unchecked",
-    "-Xlint"
+    "-unchecked"
   ),
-  shellPrompt := { state =>
-    val branch = if (file(".git").exists) {
-      "git branch".lines_!.find { _.head == '*' }.map { _.drop(1) }.getOrElse("")
-    } else ""
-    Project.extract(state).currentRef.project + branch + " > "
-  }
+  scalacOptions in (Compile, console) -= "-Ywarn-unused-import"
 )
 
 lazy val root = (project.in(file(".")))
@@ -32,8 +26,8 @@ lazy val root = (project.in(file(".")))
         "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
 
         // Logger
-        "ch.qos.logback" % "logback-classic" % "1.1.7",
-        "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0"
+        "ch.qos.logback" % "logback-classic" % "1.2.3",
+        "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2"
       )
     }
   )

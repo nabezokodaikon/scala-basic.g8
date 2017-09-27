@@ -8,6 +8,5 @@ object Main extends App with LazyLogging {
     "Hello " + name + "!"
   }
 
-  logger.info("HelloWorld!")
-
+  logger.info(helloWorld("nabezokodaikokn"))
 }
