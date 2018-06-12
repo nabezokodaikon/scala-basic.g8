@@ -22,6 +22,19 @@ $ cd scala-basic-test
 A [Giter8][g8] template for ...!
 
 
+## Usage for plugin
+### ScalaTest
+```
+$ sbt
+sbt> testOnly <Class name> // testOnly fpinscala.applicative.ApplicativeSpec
+```
+
+### Scoverage
+```
+$ sbt clean coverage test && sbt coverageReport
+```
+
+
 Template license
 ----------------
 Written in 2018 by nabezokodaikon nabezoko.daikon@gmail.com
