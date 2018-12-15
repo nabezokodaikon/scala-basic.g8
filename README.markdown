@@ -1,4 +1,4 @@
-# Scala with scalatest.
+# Scala basic template
 ## Usage
 ### Master branch
 ```
@@ -22,6 +22,13 @@ $ cd scala-basic-test
 A [Giter8][g8] template for ...!
 
 
+## ENSIME
+```
+$ sbt ensimeConfig
+$ sbt ensimeConfigProject
+```
+
+
 ## Usage for plugin
 ### ScalaTest
 ```
@@ -33,6 +40,12 @@ sbt> testOnly <Class name> // testOnly fpinscala.applicative.ApplicativeSpec
 ```
 $ sbt clean coverage test && sbt coverageReport
 ```
+
+
+## TODO
+* Scalafmt
+
+
 
 
 Template license
