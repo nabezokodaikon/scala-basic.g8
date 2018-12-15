@@ -5,7 +5,9 @@ version := "$version$"
 organization := "$organization$"
 
 libraryDependencies ++= {
+
   val scalaTestVersion = "3.0.5"
+
   Seq(
     // Logger
     "ch.qos.logback" % "logback-classic" % "1.2.3",
@@ -17,4 +19,10 @@ libraryDependencies ++= {
   )
 }
 
-initialCommands in console := "import $package$._"
+scalafmtConfig in ThisBuild := file(".scalafmt.conf")
+scalafmtConfig := file(".scalafmt.conf")
+scalafmtConfig in Compile := file(".scalafmt.conf")
+
+scalafmtOnCompile in ThisBuild := true
+scalafmtOnCompile := true
+scalafmtOnCompile in Compile := true
