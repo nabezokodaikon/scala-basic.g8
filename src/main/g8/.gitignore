@@ -28,6 +28,6 @@ tags
 # log
 logs/
 
-# ENSIME
-.ensime
-.ensime_cache/
+# Metals
+.metals
+.bloop
