@@ -15,7 +15,7 @@ libraryDependencies ++= {
     // Test
     "org.scalactic" %% "scalactic" % scalaTestVersion,
     "org.scalatest" %% "scalatest" % scalaTestVersion % "test",
-    "org.scalacheck" %% "scalacheck" % "1.14.0" % "test",
+    "org.scalacheck" %% "scalacheck" % "1.14.0" % "test"
   )
 }
 
